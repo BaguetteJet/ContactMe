@@ -1,12 +1,11 @@
 body { 
     font-family: Consolas, "Courier New", monospace;
-    max-width: 600px; 
-    margin: 40px auto; 
+    max-width: 20em; 
+    padding: 1rem;
+    margin: auto; 
     line-height: 1.6;
-    }
-h1 { 
-    font-size: 28px; 
 }
-a { 
-    color: blue;
+img {
+    max-width: 20em;
+    height: auto;
 }
