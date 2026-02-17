@@ -1,11 +1,39 @@
-body { 
-    font-family: Consolas, "Courier New", monospace;
-    max-width: 20em; 
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #1A1A1A;
+    --accent-color: #FF0000;
+    --accent-color2: #FF4500;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #F0F0F0;
+        --accent-color: #FF4500;
+        --accent-color2: #FF0000;
+    }
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: monospace;
+    max-width: 20em;
+    min-height: 100%; 
     padding: 1rem;
     margin: auto; 
     line-height: 1.6;
 }
+a:link      {color: var(--accent-color);}
+a:visited   {color: var(--accent-color);}
+a:hover     {color: var(--accent-color2);}
+a:active    {color: var(--accent-color);}
 img {
     max-width: 20em;
     height: auto;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
